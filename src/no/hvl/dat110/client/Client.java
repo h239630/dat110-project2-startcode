@@ -74,7 +74,7 @@ public class Client extends Thread {
 	public void publish(String topic, String message) {
 
 		PublishMsg msg = new PublishMsg(user, topic, message);
-
+		System.out.println("READING: " + message);
 		send(msg);
 
 	}
